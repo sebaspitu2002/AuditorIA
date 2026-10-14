@@ -1,3 +1,22 @@
+# Secretos: nunca se suben (sí se sube la plantilla .env.example)
 .env
-.venv
-node_modules
+.env.*
+!.env.example
+
+# PDFs de prueba y de clientes: nunca se suben
+pdf_test/
+*.pdf
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node / Next.js
+node_modules/
+.next/
+
+# Sistema y editor
+.DS_Store
+Thumbs.db
